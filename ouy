@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人网页</title>
+    <link
+      href="https://fonts.font.im/css?family=Dancing+Script"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      body {
+        background-color: #000000;
+        color: #fff;
+        display: flex;
+        position: relative;
+      }
+      .flex {
+        display: flex;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      #navul {
+        position: relative;
+        justify-content: center;
+        width: 420px;
+        height: 30px;
+        line-height: 30px;
+        box-shadow: 2px 5px 15px rgba(184, 83, 83, 0.7);
+        display: flex;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+      .navli {
+        width: 70px;
+        text-align: center;
+      }
+      .navli:hover .uison {
+        display: block;
+      }
+      .uison {
+        box-shadow: 2px 5px 15px rgba(202, 95, 95, 0.7);
+        border-radius: 5px;
+        display: none;
+      }
+      .uison li:not(:first-child) {
+        border-top: 1px dashed rgb(199, 61, 61);
+      }
+      .lison:hover {
+        background-color: rgb(41, 61, 33);
+        border-radius: 3px;
+      }
+      #hk {
+        position: absolute;
+        left: 0;
+        width: 70px;
+        height: 30px;
+        background-color: rgb(143, 119, 69);
+        border-radius: 5px;
+        z-index: -999;
+        transition: 0.5s;
+        display: none;
+      }
+      .navli:nth-child(1):hover ~ #hk {
+        display: block;
+        left: 0px;
+      }
+      .navli:nth-child(2):hover ~ #hk {
+        display: block;
+        left: 70px;
+      }
+      .navli:nth-child(3):hover ~ #hk {
+        display: block;
+        left: 140px;
+      }
+      .navli:nth-child(4):hover ~ #hk {
+        display: block;
+        left: 210px;
+      }
+      .navli:nth-child(5):hover ~ #hk {
+        display: block;
+        left: 280px;
+      }
+      .navli:nth-child(6):hover ~ #hk {
+        display: block;
+        left: 350px;
+      }
+    </style>
+  </head>
+  <body class="flex column">
+    <div
+      style="
+        height: 100px;
+        margin: 8px auto;
+        background-color: #fff;
+        border-radius: 2px;
+        text-align: center;
+      "
+      class="flex"
+    >
+      <img src="./img/07.jpg" alt="" width="88px" height="100px" />
+    </div>
+    <div
+      style="height: 30px; justify-content: center; font-size: 14px"
+      class="flex"
+    >
+      <ul id="navul">
+        <li class="navli">
+          <h4>FIRM</h4>
+          <ul class="uison">
+            <li class="lison">FIRM</li>
+          </ul>
+        </li>
+        <li class="navli">
+          <h4>BALL</h4>
+          <ul class="uison">
+            <li class="lison">BALL</li>
+            <li class="lison">BALL</li>
+          </ul>
+        </li>
+        <li class="navli">
+          <h4>LOVE</h4>
+          <ul class="uison">
+            <li class="lison">LOVE</li>
+            <li class="lison">LOVE</li>
+            <li class="lison">LOVE</li>
+          </ul>
+        </li>
+        <li class="navli">
+          <h4>NOVEL</h4>
+          <ul class="uison">
+            <li class="lison">NOVEL</li>
+            <li class="lison">NOVEL</li>
+            <li class="lison">NOVEL</li>
+            <li class="lison">NOVEL</li>
+          </ul>
+        </li>
+        <li class="navli">
+          <h4>LIFE</h4>
+          <ul class="uison">
+            <li class="lison">LIFE</li>
+            <li class="lison">LIFE</li>
+            <li class="lison">LIFE</li>
+            <li class="lison">LIFE</li>
+            <li class="lison">LIFE</li>
+          </ul>
+        </li>
+        <li class="navli">
+          <h4>MUSIC</h4>
+          <ul class="uison">
+            <li class="lison">MUSIC</li>
+            <li class="lison">MUSIC</li>
+            <li class="lison">MUSIC</li>
+            <li class="lison">MUSIC</li>
+            <li class="lison">MUSIC</li>
+            <li class="lison">MUSIC</li>
+          </ul>
+        </li>
+        <div id="hk"></div>
+      </ul>
+    </div>
+    <div
+      style="
+        height: 520px;
+        justify-content: center;
+        align-items: center;
+        background-color: #999999;
+      "
+      class="flex"
+    >
+      <div
+        style="
+          height: 400px;
+          width: 400px;
+          text-size-adjust: 100%;
+          font-family: 'Dancing Script', cursive;
+          color: #000000;
+          line-height: 1.6;
+        "
+        class="flex column"
+      >
+        <h1>欧阳立强</h1>
+        <h2>OuYangLiQiang</h2>
+        <h2 style="text-align: right; margin-top: 260px">君子藏器于身</h2>
+        <h2>--待时而动</h2>
+      </div>
+    </div>
+
+    <div
+      style="
+        height: 130px;
+        color: #999999;
+        text-align: center;
+        padding: 40px;
+        line-height: 1.7;
+        font-size: 12px;
+      "
+      class="flex flex1 column"
+    >
+      <p>版权所有: oyhjj.com</p>
+      <a href="https://oyhjj.com">我的网站</a>
+    </div>
+  </body>
+</html>
